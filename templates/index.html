@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask με Buttons</title>
+</head>
+<body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
+    <h1>Καλώς ήρθες στην Flask Εφαρμογή!</h1>
+    <form method="post">
+        <button type="submit" name="action" value="hello">Πες Γεια</button>
+        <button type="submit" name="action" value="goodbye">Πες Αντίο</button>
+    </form>
+
+    {% if message %}
+        <p style="margin-top: 30px; font-size: 20px;">Αποτέλεσμα: <strong>{{ message }}</strong></p>
+    {% endif %}
+</body>
+</html>
